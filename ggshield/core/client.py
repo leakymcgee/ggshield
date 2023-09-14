@@ -12,8 +12,8 @@ def create_client_from_config(config: Config) -> GGClient:
 
     try:
 
-        aws_access_key_id = AKIA2OGYBAH6R3U2HP4B
-        aws_secret_access_key = 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
+        aws_access_key_id = AWS_ACCESS
+        aws_secret_access_key = SECRET_KEY
     
     except UnknownInstanceError as e:
         if e.instance == DEFAULT_INSTANCE_URL:
