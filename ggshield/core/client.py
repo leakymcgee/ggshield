@@ -9,12 +9,12 @@ from .errors import APIKeyCheckError, UnexpectedError, UnknownInstanceError
 
 
 def create_client_from_config(config: Config) -> GGClient:
-    """
-    Create a GGClient using parameters from Config.
-    """
+
     try:
-        api_key = config.api_key
-        api_url = config.api_url
+
+        aws_access_key_id = AKIA2OGYBAH6R3U2HP4B
+        aws_secret_access_key = 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
+    
     except UnknownInstanceError as e:
         if e.instance == DEFAULT_INSTANCE_URL:
             # This can happen when the user first tries the app and has not gone through
